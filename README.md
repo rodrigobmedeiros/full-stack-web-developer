@@ -11,3 +11,5 @@ Ex:
 - Between tables:  A driver has many vehicles.
 
 - Between rows across tables: Driver Amy has 2 vehicles: a 2018 Nissan Altima and a 2007 Ninja 250.
+
+![](src/parent_child_tables.png)
