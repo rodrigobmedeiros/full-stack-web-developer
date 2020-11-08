@@ -15,7 +15,16 @@ Ex:
 
 <div align="center">
 <img src=src/parent_child_relationship.png>
-<p>Relationship between parent and child table</p>
+<p>Relationship between parent and child table.</p>
 </div>
 
-In example above, we have a parent table (drivers) and a child table (vehicles). To create a relationship between these two tables, a foreign key is included into the child table. In this case, the foreign key is the driver id, which relates the vehicle to its driver.
+In example above, we have a parent table (drivers) and a child table (vehicles). To create a relationship between these two tables, a foreign key is included into the child table. In this case, the foreign key is the driver id, which relates the vehicle to its driver. With this mapping, we can use JOIN statment to get info combining child and parent tables.
+
+Ex: What is the make, model, and year of vehicles that driver Sarah have?
+
+<div align="center">
+<img src=src/query_child_parent.png>
+<p>Query example using foreign key.</p>
+</div>
+
+In this example, we get information (make, model and year) from a child table (vehicles) joined with a parent table (drivers) to use the driver's name as a filter.
