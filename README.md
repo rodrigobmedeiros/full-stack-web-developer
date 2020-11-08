@@ -14,7 +14,7 @@ Ex:
 
 
 <div align="center">
-<img src=src/parent_child_tables.png>
+<img src=src/parent_child_relationship.png>
 <p>Relationship between parent and child table</p>
 </div>
 
