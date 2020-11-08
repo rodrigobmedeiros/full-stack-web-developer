@@ -12,6 +12,10 @@ Ex:
 
 - Between rows across tables: Driver Amy has 2 vehicles: a 2018 Nissan Altima and a 2007 Ninja 250.
 
-<div align=”center”>![](src/parent_child_tables.png)</div>
+
+<div align="center">
+<img src=src/parent_child_tables.png>
+<p>Perfectly balanced</p>
+</div>
 
 In example above, we have a parent table (drivers) and a child table (vehicles). To create a relationship between these two tables, a foreign key is included into the child table. In this case, the foreign key is the driver id, which relates the vehicle to its driver.
