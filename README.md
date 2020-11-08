@@ -28,3 +28,36 @@ Ex: What is the make, model, and year of vehicles that driver Sarah have?
 </div>
 
 In this example, we get information (make, model and year) from a child table (vehicles) joined with a parent table (drivers) to use the driver's name as a filter.
+
+## SQLAlchemy ORM - db.relationship
+
+- SQLAlchemy configures the settings between model relationship once, and generates JOIN statements for us whenever we need them.
+- `db.relationship` is an interface offered in SQLAlchemy to provide and configure a mapped relationship between two models.
+- `db.relationship` is defined on the parent model, and it sets:
+    - the name of its children (e.g. `children`), for example `parent_1.children`.
+    - the name of a parent on a child using the backref, for example `child_1.my_amazing_parent`.
+
+<div align="center">
+<img src=src/db_relationship_example.png>
+<p>Example of db.relationship.</p>
+</div>
+
+## Configuring Relationships
+
+`db.relationship` allows configure when joined should be loaded. This mechanism is important because joins are very expansive. To make joins using the parent-child relationship, we have two options, described below.
+
+### Lazy loading
+
+Load needed joined data only as needed. __Default__ in SQLAlchemy.
+
+- PRO: no initial wait time. Load only what you need.
+- CON: produces a join SQL call every time there is a request for a joined asset. Bad if done often.
+
+### Eager loading
+
+Load all needed joined data objects, all ta once.
+
+- PRO: reduces further queries to the database. Subsequent SQL calls read existing data.
+- CON: loading the joined table has a long upfront initial load time.
+
+Considering lazy loading, `lazy=True`, is the default option in `db.relationship`.
