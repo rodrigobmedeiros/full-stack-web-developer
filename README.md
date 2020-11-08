@@ -5,8 +5,8 @@ Notes on Udacity Nanodregree Program: [Full Stack Web Developer](https://www.uda
 ## Relationships & Joins
 
 Relational databases map relationships between tables and between rows across tables:
-\
-Ex:\
+
+Ex:
 
 - Between tables:  A driver has many vehicles.
 
